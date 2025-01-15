@@ -182,6 +182,21 @@ BUILD_SMALI()
     echo ""
     cd "$PDR"
 }
+
+BUILD_MAGISKBOOT()
+{
+    local PDR
+    PDR="$(pwd)"
+
+    echo -e "- Building magiskboot...\n"
+
+    cd "$SRC_DIR/external/magiskboot"
+    cp --preserve=all "libmagiskboot.so" "$TOOLS_DIR/magiskboot"
+    chmod +x "$TOOLS_DIR/magiskboot"
+
+    echo ""
+    cd "$PDR"
+}
 # ]
 
 if [ "$#" -gt 0 ]; then
@@ -199,6 +214,7 @@ IMG2SDAT=true
 SAMFIRM=true
 SIGNAPK=true
 SMALI=true
+MAGISKBOOT=true
 
 ANDROID_TOOLS_EXEC=(
     "adb" "append2simg" "avbtool" "e2fsdroid"
@@ -233,6 +249,10 @@ SMALI_EXEC=(
     "android-smali.jar" "baksmali" "smali" "smali-baksmali.jar"
 )
 CHECK_TOOLS "${SMALI_EXEC[@]}" && SMALI=false
+MAGISKBOOT_EXEC=(
+    "magiskboot"
+)
+CHECK_TOOLS "${MAGISKBOOT_EXEC[@]}" && MAGISKBOOT=false
 
 $ANDROID_TOOLS && BUILD_ANDROID_TOOLS
 $APKTOOL && BUILD_APKTOOL
@@ -241,5 +261,6 @@ $IMG2SDAT && BUILD_IMG2SDAT
 $SAMFIRM && BUILD_SAMFIRM
 $SIGNAPK && BUILD_SIGNAPK
 $SMALI && BUILD_SMALI
+$MAGISKBOOT && BUILD_MAGISKBOOT
 
 exit 0
