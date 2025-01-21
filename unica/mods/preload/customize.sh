@@ -18,17 +18,25 @@ DOWNLOAD_APK()
 }
 # ]
 
-# Patched GoodLock Manager @corsicanu
-# https://github.com/corsicanu/goodlock_dump
-DOWNLOAD_APK "https://github.com/corsicanu/goodlock_dump/raw/main/GoodLock_patched.apk" \
-    "GoodLock/GoodLock.apk"
+# Samsung Notes
+# https://play.google.com/store/apps/details?id=com.samsung.android.app.notes
+DOWNLOAD_APK "$(GET_GALAXY_STORE_DOWNLOAD_URL "com.samsung.android.app.notes")" \
+    "Notes/Notes.apk"
 
-# Samsung Internet Browser
-# https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser
-if [[ "$TARGET_CODENAME" != "a71" ]]; then
-    DOWNLOAD_APK "$(GET_GALAXY_STORE_DOWNLOAD_URL "com.sec.android.app.sbrowser")" \
-        "SBrowser/SBrowser.apk"
-fi
+# Samsung Calculator
+# https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator
+DOWNLOAD_APK "$(GET_GALAXY_STORE_DOWNLOAD_URL "com.sec.android.app.popupcalculator")" \
+    "Calculator/Calculator.apk"
+
+# Samsung Calendar
+# https://play.google.com/store/apps/details?id=com.samsung.android.calendar
+DOWNLOAD_APK "$(GET_GALAXY_STORE_DOWNLOAD_URL "com.samsung.android.calendar")" \
+    "Calendar/Calendar.apk"
+
+# Samsung Clock
+# https://play.google.com/store/apps/details?id=com.sec.android.app.clockpackage
+DOWNLOAD_APK "$(GET_GALAXY_STORE_DOWNLOAD_URL "com.sec.android.app.clockpackage")" \
+    "Clock/Clock.apk"
 
 sed -i "/system\/preload/d" "$WORK_DIR/configs/fs_config-system" \
     && sed -i "/system\/preload/d" "$WORK_DIR/configs/file_context-system"
