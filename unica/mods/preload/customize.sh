@@ -28,11 +28,6 @@ DOWNLOAD_APK "$(GET_GALAXY_STORE_DOWNLOAD_URL "com.samsung.android.app.notes")" 
 DOWNLOAD_APK "$(GET_GALAXY_STORE_DOWNLOAD_URL "com.sec.android.app.popupcalculator")" \
     "Calculator/Calculator.apk"
 
-# Samsung Calendar
-# https://play.google.com/store/apps/details?id=com.samsung.android.calendar
-DOWNLOAD_APK "$(GET_GALAXY_STORE_DOWNLOAD_URL "com.samsung.android.calendar")" \
-    "Calendar/Calendar.apk"
-
 # Samsung Clock
 # https://play.google.com/store/apps/details?id=com.sec.android.app.clockpackage
 DOWNLOAD_APK "$(GET_GALAXY_STORE_DOWNLOAD_URL "com.sec.android.app.clockpackage")" \
