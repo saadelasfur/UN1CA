@@ -107,21 +107,3 @@ lib64/vendor.qti.hardware.qccvndhal@1.0.so
 lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 priv-app/com.qualcomm.location
 "
-
-# Qualcomm IPA firmware blobs
-VENDOR_DEBLOAT+="
-firmware/ipa_fws.b00
-firmware/ipa_fws.b01
-firmware/ipa_fws.b02
-firmware/ipa_fws.b03
-firmware/ipa_fws.b04
-firmware/ipa_fws.elf
-firmware/ipa_fws.mdt
-firmware/yupik_ipa_fws.b00
-firmware/yupik_ipa_fws.b01
-firmware/yupik_ipa_fws.b02
-firmware/yupik_ipa_fws.b03
-firmware/yupik_ipa_fws.b04
-firmware/yupik_ipa_fws.elf
-firmware/yupik_ipa_fws.mdt
-"
