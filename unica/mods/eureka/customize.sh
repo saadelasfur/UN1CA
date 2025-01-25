@@ -599,3 +599,6 @@ if ! grep -q "EnvironmentAdaptiveDisplay" "$WORK_DIR/configs/fs_config-system"; 
         echo "system/priv-app/SpriteWallpaper/SpriteWallpaper.apk 0 0 644 capabilities=0x0"
     } >> "$WORK_DIR/configs/fs_config-system"
 fi
+
+echo "- Processing \"Custom boot animation\" by @BlackMesa123"
+bash "$SRC_DIR/unica/mods/bootanim/customize.sh"
