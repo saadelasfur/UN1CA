@@ -2,7 +2,7 @@ SKIPUNZIP=1
 
 # [
 KERNELSU_ZIP="https://github.com/saadelasfur/android_kernel_samsung_sm7325/releases/download/v1.0.2/KSU_v1.0.2-20250115_m52xq_OneUI-SusFS-erofs.zip"
-KERNELSU_MANAGER_APK="https://github.com/tiann/KernelSU/releases/download/v1.0.2/KernelSU_v1.0.2_11986-release.apk"
+KERNELSU_MANAGER_APK="https://github.com/tiann/KernelSU/releases/download/v1.0.3/KernelSU_v1.0.3_12018-release.apk"
 
 REMOVE_FROM_WORK_DIR()
 {
