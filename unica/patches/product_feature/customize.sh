@@ -187,7 +187,7 @@ if [[ "$(GET_FP_SENSOR_TYPE "$SOURCE_FP_SENSOR_CONFIG")" != "$(GET_FP_SENSOR_TYP
     fi
 fi
 
-if [[ "$TARGET_API_LEVEL" -lt 34 ]]; then
+if [[ "$TARGET_CODENAME" != "m52xq" ]] && [[ "$TARGET_API_LEVEL" -lt 34 ]]; then
     echo "Applying Face HIDL patches"
     APPLY_PATCH "system/framework/services.jar" "face/services.jar/0001-Fallback-to-Face-HIDL-2.0.patch"
 fi

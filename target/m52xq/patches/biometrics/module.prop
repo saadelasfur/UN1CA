@@ -1,0 +1,4 @@
+id=biometrics
+name=HAL3 face biometrics
+author=saadelasfur
+description=Upstreams face biometrics HALs to v3.
