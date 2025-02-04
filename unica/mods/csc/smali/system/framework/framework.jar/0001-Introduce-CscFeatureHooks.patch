@@ -363,7 +363,7 @@ index 00000000..89ac4631
 +
 +    const-string v0, "CscFeature_SmartManager_ConfigSubFeatures"
 +
-+    const-string v3, "appdatacleaner|trafficmanager_auto|fake_base_station|badappnoti|trafficmanager|applock|riskcontrol|newdataplan"
++    const-string v3, "applock"
 +
 +    invoke-virtual {v1, v0, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 +

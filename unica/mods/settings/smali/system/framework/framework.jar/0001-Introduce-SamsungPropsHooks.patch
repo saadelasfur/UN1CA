@@ -355,7 +355,7 @@ index 00000000..c501ba81
 +
 +    if-eqz p0, :cond_5
 +
-+    const-string p0, "CHINA"
++    const-string p0, "GERMANY"
 +
 +    sput-object p0, Lio/mesalabs/unica/SamsungPropsHooks;->sSpoofCountryCode:Ljava/lang/String;
 +
