@@ -25,6 +25,11 @@ SYSTEM_DEBLOAT+="
 system/bin/mafpc_write
 "
 
+# GameDriver
+SYSTEM_DEBLOAT+="
+system/priv-app/GameDriver-SM8450
+"
+
 # system_ext clean-up
 SYSTEM_EXT_DEBLOAT+="
 etc/permissions/com.qti.location.sdk.xml
