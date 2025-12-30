@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Tag count="4">
+	<!-- Chipset list supported in XML overriding -->
+		<!-- WCN3988 -->
+		<!-- CHEROKEE_VER_2_1 for MTP verification-->
+		<!-- WCN3991 -->
+		<!-- QCA6390 -->
+		<!-- WCN6850 -->
+		<!-- WCN6856 -->
+		<!-- WCN6856_2.1 -->
+	<Chipset value="WCN6856_2.1"/>	
+	<!-- describe project / target name -->
+	<Target value="R9_GF"/>		
+	<!-- External Power Configuration -->
+	<Tag36>
+		<ChangeType type="default"/>
+		<!-- Length len="52"/ -->
+		<Length len="52"/>
+		<OffsetCount count="2"/>
+		<Offset>
+			<Offset0 value="12"/>
+			<Offset1 value="13"/>
+		</Offset>
+		<ChangesCount count="2"/>
+		<Changes>
+			<!-- Hexadecimal value -->
+			<Changes0 value="0x40"/>
+			<Changes1 value="0x02"/>
+		</Changes>
+	</Tag36>
+	<!-- LE Tx Power Configuration -->
+    <Tag83>
+        <ChangeType type="default"/>
+        <!-- Length len="8"/ -->
+        <Length len="9"/>
+        <OffsetCount count="5"/>
+        <Offset>
+            <Offset0 value="0"/>
+            <Offset1 value="1"/>
+            <Offset2 value="2"/>
+            <Offset3 value="3"/>
+            <Offset4 value="8"/>
+        </Offset>
+        <ChangesCount count="5"/>
+        <Changes>
+            <!-- Hexadecimal value -->
+            <Changes0 value="0x09"/>
+            <Changes1 value="0x09"/>
+            <Changes2 value="0x09"/>
+            <Changes3 value="0x09"/>
+            <Changes4 value="0x09"/>
+        </Changes>
+    </Tag83>
+	<!-- Channel Calibration -->
+	<!-- It needs to be parsed entire data for Tag87 -->
+	<Tag87>
+		<!-- ChangeType type="entire" means that entire data of the NVM tag will be overwritten -->
+		<ChangeType type="entire"/>
+		<!-- Length len="80"/ -->
+		<Length len="80"/>
+		<OffsetCount count="80"/>
+		<ChangesCount count="80"/>
+		<Changes>
+			0x0b,0x0b,0x0b,0x0b,0x0a,0x0a,0x0a,0x0a,0x0a,0x0a,0x09,0x09,0x09,0x09,0x09,0x09,0x09,0x08,0x08,0x08,
+			0x08,0x08,0x07,0x07,0x07,0x06,0x06,0x06,0x06,0x06,0x05,0x05,0x05,0x05,0x05,0x04,0x04,0x04,0x04,0x04,
+			0x0b,0x0b,0x0b,0x0b,0x0a,0x0a,0x0a,0x0a,0x0a,0x0a,0x09,0x09,0x09,0x09,0x09,0x09,0x09,0x08,0x08,0x08,
+			0x08,0x08,0x07,0x07,0x07,0x06,0x06,0x06,0x06,0x06,0x05,0x05,0x05,0x05,0x05,0x04,0x04,0x04,0x04,0x04,
+		</Changes>
+	</Tag87>
+	<!-- SAR backoff index -->
+	<Tag204>
+		<ChangeType type="default"/>
+		<Length len="13"/>
+		<OffsetCount count="3"/>
+		<Offset>
+	<!-- SAR backoff disable -->
+			<Offset0 value="1"/>
+	<!-- SAR backoff Head enabled -->
+			<Offset1 value="2"/>
+	<!-- SAR backoff NR_only enabled -->
+			<Offset2 value="3"/>
+		</Offset>
+		<ChangesCount count="3"/>
+		<Changes>
+			<!-- Hexadecimal value/ 0.25dBm unit  0x50 : 20dBm, 0x28: 10dBm  -->
+			<Changes0 value="0x50"/>
+			<Changes1 value="0x50"/>
+			<Changes2 value="0x50"/>		
+		</Changes>
+	</Tag204>
+</Tag>

@@ -1,0 +1,30 @@
+on property:ro.boot.em.model=SM-G990B2
+    mount none /vendor/r9q2/bin/factory.ssc /vendor/bin/factory.ssc bind
+    mount none /vendor/r9q2/bin/hostapd_cli /vendor/bin/hostapd_cli bind
+    mount none /vendor/r9q2/bin/hw/android.hardware.wifi@1.0-service /vendor/bin/hw/android.hardware.wifi@1.0-service bind
+    mount none /vendor/r9q2/bin/hw/hostapd /vendor/bin/hw/hostapd bind
+    mount none /vendor/r9q2/bin/hw/macloader /vendor/bin/hw/macloader bind
+    mount none /vendor/r9q2/bin/hw/mfgloader /vendor/bin/hw/mfgloader bind
+    mount none /vendor/r9q2/bin/hw/vendor.samsung.hardware.wifi@2.0-service /vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service bind
+    mount none /vendor/r9q2/bin/hw/wpa_supplicant /vendor/bin/hw/wpa_supplicant bind
+    mount none /vendor/r9q2/bin/sigma_dut /vendor/bin/sigma_dut bind
+    mount none /vendor/r9q2/bin/wpa_cli /vendor/bin/wpa_cli bind
+    mount none /vendor/r9q2/etc/NOTICE.xml.gz /vendor/etc/NOTICE.xml.gz bind
+    mount none /vendor/r9q2/etc/audconf/OPEN/Bluetooth_cal.acdb /vendor/etc/audconf/OPEN/Bluetooth_cal.acdb bind
+    mount none /vendor/r9q2/etc/audconf/OPEN/General_cal.acdb /vendor/etc/audconf/OPEN/General_cal.acdb bind
+    mount none /vendor/r9q2/etc/audconf/OPEN/Global_cal.acdb /vendor/etc/audconf/OPEN/Global_cal.acdb bind
+    mount none /vendor/r9q2/etc/audconf/OPEN/Handset_cal.acdb /vendor/etc/audconf/OPEN/Handset_cal.acdb bind
+    mount none /vendor/r9q2/etc/audconf/OPEN/Hdmi_cal.acdb /vendor/etc/audconf/OPEN/Hdmi_cal.acdb bind
+    mount none /vendor/r9q2/etc/audconf/OPEN/Headset_cal.acdb /vendor/etc/audconf/OPEN/Headset_cal.acdb bind
+    mount none /vendor/r9q2/etc/audconf/OPEN/Speaker_cal.acdb /vendor/etc/audconf/OPEN/Speaker_cal.acdb bind
+    mount none /vendor/r9q2/etc/audio_platform_info_diff.xml /vendor/etc/audio_platform_info_diff.xml bind
+    mount none /vendor/r9q2/etc/mixer_paths.xml /vendor/etc/mixer_paths.xml bind
+    mount none /vendor/r9q2/etc/wifi/wpa_supplicant.conf /vendor/etc/wifi/wpa_supplicant.conf bind
+    mount none /vendor/r9q2/etc/wifi/wpa_supplicant_overlay.conf /vendor/etc/wifi/wpa_supplicant_overlay.conf bind
+    mount none /vendor/r9q2/firmware/ipa_fws.b01 /vendor/firmware/ipa_fws.b01 bind
+    mount none /vendor/r9q2/firmware/ipa_fws.elf /vendor/firmware/ipa_fws.elf bind
+    mount none /vendor/r9q2/firmware/ipa_fws.mdt /vendor/firmware/ipa_fws.mdt bind
+    mount none /vendor/r9q2/firmware/yupik_ipa_fws.b01 /vendor/firmware/yupik_ipa_fws.b01 bind
+    mount none /vendor/r9q2/firmware/yupik_ipa_fws.elf /vendor/firmware/yupik_ipa_fws.elf bind
+    mount none /vendor/r9q2/firmware/yupik_ipa_fws.mdt /vendor/firmware/yupik_ipa_fws.mdt bind
+    setprop vendor.qcom.bluetooth.soc hastings

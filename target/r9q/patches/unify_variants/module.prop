@@ -1,0 +1,4 @@
+id=unify_variants
+name=Variant unifier
+author=saadelasfur, Fede2782
+description=Applies the required patches to unify the r9q and r9q2 variants.
